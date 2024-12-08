@@ -86,9 +86,7 @@ public class GithubEvents {
             } else {
                 System.out.println("Invalid GitHub username.");
             } scanner.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
     }
