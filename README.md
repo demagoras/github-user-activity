@@ -9,5 +9,24 @@ This tool uses GitHub API integration, JSON object and array handling, along wit
 
 For learning how to use handle GitHub's API requests both the [GitHub Docs](https://docs.github.com/) and the popular API platform [Postman](https://www.postman.com/) were used. For JSON handling, the [Apache Maven](https://maven.apache.org/) Repository allowed for the integration of the [org.json](https://mvnrepository.com/artifact/org.json/json) package. It was included as a dependency in the `pom.xml` file with version 20240303.
 
+## Setup & Usage
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/yourusername/github-user-activity.git
+   ```
+2. **Open the project folder:**
+   ```sh
+   cd github-user-activity
+   ```
+3. **Change the API key to your own:**
+   ```java
+   HttpRequest request = ...
+                         .header("Authorization", "GITHUB_API_KEY")
+                         ...
+   ```
+4. **Run the project:**
+   - Open `index.html` in your browser.
+
 # Additional information
 This is a project created for [roadmap.sh](https://roadmap.sh/projects/github-user-activity).
